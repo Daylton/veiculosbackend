@@ -40,7 +40,6 @@ public class VeiculoServiceImpl implements VeiculoService {
                         veiculoEntity.getMarca(),
                         veiculoEntity.getAno(),
                         veiculoEntity.getDescricao(),
-                        veiculoEntity.isVendido(),
                         veiculoEntity.getCreated(),
                         veiculoEntity.getUpdated()
                 ))
@@ -79,7 +78,6 @@ public class VeiculoServiceImpl implements VeiculoService {
         veiculoEntity.setMarca(veiculoModel.getMarca());
         veiculoEntity.setAno(veiculoModel.getAno());
         veiculoEntity.setDescricao(veiculoModel.getDescricao());
-        veiculoEntity.setVendido(veiculoModel.isVendido());
         veiculoEntity.setUpdated(veiculoModel.getUpdated());
 
         veiculoRepository.save(veiculoEntity);

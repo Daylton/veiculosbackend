@@ -2,7 +2,6 @@ package com.daylton.veiculos.controller;
 
 import com.daylton.veiculos.model.VeiculoModel;
 import com.daylton.veiculos.service.VeiculoService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

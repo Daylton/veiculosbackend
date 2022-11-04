@@ -14,21 +14,19 @@ public class VeiculoModel {
     private int ano;
     @Column(columnDefinition = "TEXT")
     private String descricao;
-    private boolean vendido;
     private LocalDateTime created;
     private LocalDateTime updated;
 
     public VeiculoModel() {
     }
 
-    public VeiculoModel(long id, String veiculo, String marca, int ano, String descricao, boolean vendido,
+    public VeiculoModel(long id, String veiculo, String marca, int ano, String descricao,
                         LocalDateTime created, LocalDateTime updated) {
         this.id = id;
         this.veiculo = veiculo;
         this.marca = marca;
         this.ano = ano;
         this.descricao = descricao;
-        this.vendido = vendido;
         this.created = created;
         this.updated = updated;
     }
